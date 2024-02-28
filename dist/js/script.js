@@ -3,6 +3,11 @@ const sidebarToggle = document.querySelector('.sidebar-toggle')
 const sidebarOverlay = document.querySelector('.sidebar-overlay')
 const sidebarMenu = document.querySelector('.sidebar-menu')
 const main = document.querySelector('.main')
+if(window.innerWidth < 768) {
+    main.classList.toggle('active')
+    sidebarOverlay.classList.toggle('hidden')
+    sidebarMenu.classList.toggle('-translate-x-full')
+}
 sidebarToggle.addEventListener('click', function (e) {
     e.preventDefault()
     main.classList.toggle('active')
