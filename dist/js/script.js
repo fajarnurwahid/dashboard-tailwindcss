@@ -1,3 +1,10 @@
+// Begin: Dark Mode
+const toggleDarkMode = document.getElementById("toggleDarkMode");
+toggleDarkMode.addEventListener("click", function (e) {
+  document.documentElement.classList.toggle("dark");
+});
+// End: Dark Mode
+
 // start: Sidebar
 const sidebarToggle = document.querySelector('.sidebar-toggle')
 const sidebarOverlay = document.querySelector('.sidebar-overlay')

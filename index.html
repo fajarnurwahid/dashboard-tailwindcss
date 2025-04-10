@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="dist/css/style.css">
     <title>Dashboard</title>
 </head>
-<body class="text-gray-800 font-inter">
+<body class="dark:bg-gray-900 dark:text-white text-gray-800 font-inter">
     
     <!-- start: Sidebar -->
-    <div class="fixed left-0 top-0 w-64 h-full bg-gray-900 p-4 z-50 sidebar-menu transition-transform">
+    <div class="dark:bg-gray-900 dark:text-white fixed left-0 top-0 w-64 h-full bg-gray-900 p-4 z-50 sidebar-menu transition-transform">
         <a href="#" class="flex items-center pb-4 border-b border-b-gray-800">
             <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded object-cover">
             <span class="text-lg font-bold text-white ml-3">Logo</span>
@@ -60,12 +60,12 @@
             </li>
         </ul>
     </div>
-    <div class="fixed top-0 left-0 w-full h-full bg-black/50 z-40 md:hidden sidebar-overlay"></div>
+    <div class="dark:bg-gray-900 dark:text-white fixed top-0 left-0 w-full h-full bg-black/50 z-40 md:hidden sidebar-overlay"></div>
     <!-- end: Sidebar -->
 
     <!-- start: Main -->
-    <main class="w-full md:w-[calc(100%-256px)] md:ml-64 bg-gray-50 min-h-screen transition-all main">
-        <div class="py-2 px-6 bg-white flex items-center shadow-md shadow-black/5 sticky top-0 left-0 z-30">
+    <main class="dark:bg-gray-900 dark:text-white w-full md:w-[calc(100%-256px)] md:ml-64 bg-gray-50 min-h-screen transition-all main">
+        <div class="dark:bg-gray-900 dark:text-white py-2 px-6 bg-white flex items-center shadow-md shadow-black/5 sticky top-0 left-0 z-30">
             <button type="button" class="text-lg text-gray-600 sidebar-toggle">
                 <i class="ri-menu-line"></i>
             </button>
@@ -77,6 +77,12 @@
                 <li class="text-gray-600 mr-2 font-medium">Analytics</li>
             </ul>
             <ul class="ml-auto flex items-center">
+                <button
+                id="toggleDarkMode"
+                class="px-2 py-4 dark:bg-gray-900 dark:text-white font-semibold hover:text-green-500 transition duration-300"
+                >
+                ☀️ Toggle Dark Mode
+                </button>
                 <li class="mr-1 dropdown">
                     <button type="button" class="dropdown-toggle text-gray-400 w-8 h-8 rounded flex items-center justify-center hover:bg-gray-50 hover:text-gray-600">
                         <i class="ri-search-line"></i>
@@ -292,9 +298,9 @@
                 </li>
             </ul>
         </div>
-        <div class="p-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
-                <div class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
+        <div class="dark:bg-gray-900 dark:text-white p-6">
+            <div class="dark:bg-gray-900 dark:text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                <div class="dark:bg-gray-900 dark:text-white bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
                     <div class="flex justify-between mb-6">
                         <div>
                             <div class="text-2xl font-semibold mb-1">10</div>
@@ -324,7 +330,7 @@
                         <span class="text-sm font-medium text-gray-600 ml-4">60%</span>
                     </div>
                 </div>
-                <div class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
+                <div class="dark:bg-gray-900 dark:text-white bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
                     <div class="flex justify-between mb-4">
                         <div>
                             <div class="flex items-center mb-1">
@@ -356,7 +362,7 @@
                         <img src="https://placehold.co/32x32" alt="" class="w-8 h-8 rounded-full object-cover block -ml-3">
                     </div>
                 </div>
-                <div class="bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
+                <div class="dark:bg-gray-900 dark:text-white bg-white rounded-md border border-gray-100 p-6 shadow-md shadow-black/5">
                     <div class="flex justify-between mb-6">
                         <div>
                             <div class="text-2xl font-semibold mb-1"><span class="text-base font-normal text-gray-400 align-top">&dollar;</span>2,345</div>
@@ -381,7 +387,7 @@
                 </div>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-                <div class="bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md">
+                <div class="dark:bg-gray-900 dark:text-white bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md">
                     <div class="flex justify-between mb-4 items-start">
                         <div class="font-medium">Manage orders</div>
                         <div class="dropdown">
@@ -698,7 +704,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md">
+                <div class="dark:bg-gray-900 dark:text-white bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md">
                     <div class="flex justify-between mb-4 items-start">
                         <div class="font-medium">Manage Services</div>
                         <div class="dropdown">
@@ -892,7 +898,7 @@
                 </div>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-                <div class="bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md lg:col-span-2">
+                <div class="dark:bg-gray-900 dark:text-white bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md lg:col-span-2">
                     <div class="flex justify-between mb-4 items-start">
                         <div class="font-medium">Order Statistics</div>
                         <div class="dropdown">
@@ -937,7 +943,7 @@
                         <canvas id="order-chart"></canvas>
                     </div>
                 </div>
-                <div class="bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md">
+                <div class="dark:bg-gray-900 dark:text-white bg-white border border-gray-100 shadow-md shadow-black/5 p-6 rounded-md">
                     <div class="flex justify-between mb-4 items-start">
                         <div class="font-medium">Earnings</div>
                         <div class="dropdown">
