@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./src/css/input.css -o ./dist/css/style.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/css/input.css -o ./dist/css/style.css"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.3.3"
+    "@tailwindcss/cli": "^4.0.14",
+    "tailwindcss": "^4.0.14"
   }
 }
