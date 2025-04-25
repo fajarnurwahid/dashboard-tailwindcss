@@ -11,11 +11,12 @@
     
     <div class="flex flex-col items-center justify-center min-h-screen">
         <div class="w-800 max-w-md p-6 bg-white rounded-lg shadow-md dark:bg-gray-800">
-            <h2 class="text-2xl font-bold text-center mb-6">Login</h2>
+            <h2 class="text-2xl font-bold text-center mb-6">Register</h2>
+
             <form action="/login" method="POST">
                 <div class="mb-4">
-                    <label for="username" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Username</label>
-                    <input type="text" id="username" name="username" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                    <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
                 </div>
                 <div class="mb-4">
                     <label for="password" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Password</label>
@@ -24,7 +25,7 @@
                 <button type="submit" class="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-200">Login</button>
             </form>
             <div class="mt-4 text-center">
-                <a href="/src/register.html" class="text-blue-600 hover:underline">Don't have an account? Register</a>
+                <a href="./register.html" class="text-blue-600 hover:underline">Don't have an account? Register</a>
             </div>
         </div>
     </div>
